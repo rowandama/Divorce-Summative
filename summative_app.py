@@ -11,8 +11,8 @@ import statsmodels.formula.api as smf
  
  
 # Load dataset
- 
-divorce = pd.read_csv("divorce_df.csv")
+divorce = pd.read_csv('/Users/macbookair/Downloads/data/Divorce-Summative/divorce_df.csv')
+
  
  
 # Fit logistic regression models
@@ -26,7 +26,7 @@ model_internal = smf.logit(
  
 # Structural factors
 model_structural = smf.logit(
-    "divorced ~ mental_health_issues + education_level_PhD + social_support",
+    "divorced ~ mental_health_issues + C(education_level) + social_support",
     data=divorce
 ).fit(disp=False)
  
