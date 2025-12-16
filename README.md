@@ -4,4 +4,5 @@ The analysis includes:
 - Multiple logistic regression models for internal, structural, and combined factors
 - Interpretation of significant predictors and model performance
 - Interactive Shiny dashboard for exploring predicted probabilities of divorce based on user-defined profiles
+  
 This project provides insights into the role of individual agency versus structural constraints in influencing divorce outcomes.
